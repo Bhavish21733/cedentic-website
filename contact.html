@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Cedentic Technologies - Get in touch via our contact form or WhatsApp. Located in Vizianagaram, Andhra Pradesh, India." />
+  <title>Contact | Cedentic Technologies</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-icon">C</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">Cedentic</span>
+            <span class="nav-logo-tagline">Technologies</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+
+        <a href="contact.html" class="nav-cta">
+          Get Started <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="mobileMenu">
+    <button class="nav-mobile-close" id="mobileClose" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <ul class="nav-mobile-links">
+      <li><a href="index.html" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="services.html" onclick="closeMobileMenu()">Services</a></li>
+      <li><a href="contact.html" class="active" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-mobile-cta" onclick="closeMobileMenu()">Get Started</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="animate-on-scroll">
+        <span class="section-label">Get In Touch</span>
+        <h1 class="section-title">Let's Start a<br /><span class="gradient-text">Conversation</span></h1>
+        <p class="section-desc">Have a project in mind? We'd love to hear from you. Send us a message and we'll get back to you as soon as possible.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <div class="contact-info animate-on-scroll">
+          <div class="contact-info-card">
+            <h3 class="contact-info-title">Contact Details</h3>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div>
+                <div class="contact-detail-label">Location</div>
+                <div class="contact-detail-value">Vizianagaram, Andhra Pradesh, India</div>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+              <div>
+                <div class="contact-detail-label">WhatsApp</div>
+                <div class="contact-detail-value">+91 8688641066</div>
+              </div>
+            </div>
+
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <i class="fa-solid fa-clock"></i>
+              </div>
+              <div>
+                <div class="contact-detail-label">Working Hours</div>
+                <div class="contact-detail-value">Mon – Sat: 9:00 AM – 6:00 PM IST</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-wa-card">
+            <div class="wa-icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            <h3 class="wa-title">Chat on WhatsApp</h3>
+            <p class="wa-desc">Prefer to chat directly? Reach us instantly on WhatsApp for quick responses.</p>
+            <a href="https://wa.me/918688641066?text=Hello%20Cedentic%20Technologies%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services." class="btn-whatsapp" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> Open WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form-card animate-on-scroll animate-delay-1">
+          <h2 class="contact-form-title">Send Us a Message</h2>
+          <p class="contact-form-subtitle">Fill in the form below and we'll redirect you to WhatsApp with your message pre-filled.</p>
+
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="name">Full Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-input"
+                  placeholder="Your full name"
+                  required
+                  autocomplete="name"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-input"
+                  placeholder="your@email.com"
+                  required
+                  autocomplete="email"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="service">Service Interested In</label>
+              <input
+                type="text"
+                id="service"
+                class="form-input"
+                placeholder="e.g. Web Development, IT Consulting..."
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Your Message *</label>
+              <textarea
+                id="message"
+                class="form-textarea"
+                placeholder="Tell us about your project or requirements..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <i class="fa-brands fa-whatsapp"></i>
+              Send via WhatsApp
+            </button>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            <div class="form-success-icon">
+              <i class="fa-solid fa-check"></i>
+            </div>
+            <h3 class="form-success-title">Message Sent!</h3>
+            <p class="form-success-desc">WhatsApp has been opened with your pre-filled message. We'll get back to you shortly.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">C</div>
+            <span class="footer-logo-name">Cedentic Technologies</span>
+          </div>
+          <p class="footer-desc">Empowering businesses through innovative digital solutions — web development, consulting, marketing, and talent development from Vizianagaram, India.</p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/918688641066" class="footer-social-link" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right fa-xs"></i> Home</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right fa-xs"></i> Services</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right fa-xs"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right fa-xs"></i> Web Development</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right fa-xs"></i> IT Consulting</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right fa-xs"></i> Digital Marketing</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right fa-xs"></i> Internship Programs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 <span>Cedentic Technologies</span>. All rights reserved. Made with <i class="fa-solid fa-heart" style="color:#ef4444;font-size:11px;"></i> in Vizianagaram, India.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-wa">
+    <div class="floating-wa-tooltip">Chat with us on WhatsApp</div>
+    <a href="https://wa.me/918688641066" class="floating-wa-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

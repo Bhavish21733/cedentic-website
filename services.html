@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Cedentic Technologies Services - Web Development, IT Consulting, Digital Marketing, and Internship Programs in Vizianagaram, Andhra Pradesh." />
+  <title>Services | Cedentic Technologies</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-icon">C</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">Cedentic</span>
+            <span class="nav-logo-tagline">Technologies</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" class="active">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <a href="contact.html" class="nav-cta">
+          Get Started <i class="fa-solid fa-arrow-right"></i>
+        </a>
+
+        <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="nav-mobile" id="mobileMenu">
+    <button class="nav-mobile-close" id="mobileClose" aria-label="Close menu">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <ul class="nav-mobile-links">
+      <li><a href="index.html" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="services.html" class="active" onclick="closeMobileMenu()">Services</a></li>
+      <li><a href="contact.html" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-mobile-cta" onclick="closeMobileMenu()">Get Started</a>
+  </div>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="animate-on-scroll">
+        <span class="section-label">What We Offer</span>
+        <h1 class="section-title">Services Built for<br /><span class="gradient-text">Digital Success</span></h1>
+        <p class="section-desc">From building your online presence to growing your business digitally, we have the expertise to take you from idea to impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section">
+    <div class="container">
+      <div class="services-grid">
+
+        <div class="service-card animate-on-scroll">
+          <div class="service-card-header">
+            <div class="service-icon">
+              <i class="fa-solid fa-code"></i>
+            </div>
+            <div>
+              <h2 class="service-card-title">Web Development</h2>
+              <span class="service-card-tag">Design & Build</span>
+            </div>
+          </div>
+          <p class="service-card-desc">We craft high-performance, visually stunning websites and web applications that convert visitors into customers. From landing pages to full-stack platforms, we build it all with modern technologies.</p>
+          <ul class="service-features">
+            <li>Responsive & mobile-first design</li>
+            <li>Custom web applications (React, Next.js)</li>
+            <li>E-commerce solutions</li>
+            <li>CMS integration (WordPress, Headless)</li>
+            <li>Performance optimization & SEO</li>
+          </ul>
+          <a href="contact.html" class="service-cta">
+            Start a project <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card animate-on-scroll animate-delay-1">
+          <div class="service-card-header">
+            <div class="service-icon">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <div>
+              <h2 class="service-card-title">IT Consulting</h2>
+              <span class="service-card-tag">Strategy & Solutions</span>
+            </div>
+          </div>
+          <p class="service-card-desc">Navigate the complex technology landscape with expert guidance. We help businesses align their IT infrastructure with strategic goals to drive efficiency, reduce costs, and accelerate growth.</p>
+          <ul class="service-features">
+            <li>Digital transformation roadmaps</li>
+            <li>Technology stack evaluation</li>
+            <li>Cloud migration & architecture</li>
+            <li>Cybersecurity assessments</li>
+            <li>Process automation & optimization</li>
+          </ul>
+          <a href="contact.html" class="service-cta">
+            Book a consultation <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card animate-on-scroll animate-delay-2">
+          <div class="service-card-header">
+            <div class="service-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+            <div>
+              <h2 class="service-card-title">Digital Marketing</h2>
+              <span class="service-card-tag">Grow & Scale</span>
+            </div>
+          </div>
+          <p class="service-card-desc">Supercharge your brand's online presence with data-driven marketing strategies. From SEO to social media, we create campaigns that generate real leads and measurable ROI.</p>
+          <ul class="service-features">
+            <li>Search Engine Optimization (SEO)</li>
+            <li>Social media management & ads</li>
+            <li>Google Ads & PPC campaigns</li>
+            <li>Content marketing & copywriting</li>
+            <li>Analytics & performance reporting</li>
+          </ul>
+          <a href="contact.html" class="service-cta">
+            Grow your brand <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card animate-on-scroll animate-delay-3">
+          <div class="service-card-header">
+            <div class="service-icon">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <div>
+              <h2 class="service-card-title">Internship Programs</h2>
+              <span class="service-card-tag">Learn & Launch</span>
+            </div>
+          </div>
+          <p class="service-card-desc">Kickstart your tech career with our hands-on internship programs. Work on real projects, learn from industry professionals, and build a portfolio that gets you hired.</p>
+          <ul class="service-features">
+            <li>Web development internships</li>
+            <li>Digital marketing training</li>
+            <li>Live project experience</li>
+            <li>Mentorship from industry experts</li>
+            <li>Certificate of completion</li>
+          </ul>
+          <a href="contact.html" class="service-cta">
+            Apply now <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="services-cta-section">
+    <div class="container">
+      <div class="cta-box animate-on-scroll">
+        <span class="section-label" style="justify-content:center;">Ready to Start?</span>
+        <h2 class="cta-box-title">Let's Build Something<br /><span class="gradient-text">Amazing Together</span></h2>
+        <p class="cta-box-desc">Have a project in mind or need expert advice? Reach out and let's discuss how Cedentic Technologies can help.</p>
+        <a href="contact.html" class="btn-primary">
+          Contact Us Today <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">C</div>
+            <span class="footer-logo-name">Cedentic Technologies</span>
+          </div>
+          <p class="footer-desc">Empowering businesses through innovative digital solutions — web development, consulting, marketing, and talent development from Vizianagaram, India.</p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="footer-social-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/918688641066" class="footer-social-link" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fa-solid fa-chevron-right fa-xs"></i> Home</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right fa-xs"></i> Services</a></li>
+            <li><a href="contact.html"><i class="fa-solid fa-chevron-right fa-xs"></i> Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right fa-xs"></i> Web Development</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right fa-xs"></i> IT Consulting</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right fa-xs"></i> Digital Marketing</a></li>
+            <li><a href="services.html"><i class="fa-solid fa-chevron-right fa-xs"></i> Internship Programs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2025 <span>Cedentic Technologies</span>. All rights reserved. Made with <i class="fa-solid fa-heart" style="color:#ef4444;font-size:11px;"></i> in Vizianagaram, India.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="floating-wa">
+    <div class="floating-wa-tooltip">Chat with us on WhatsApp</div>
+    <a href="https://wa.me/918688641066" class="floating-wa-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
